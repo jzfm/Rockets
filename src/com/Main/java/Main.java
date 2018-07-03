@@ -8,22 +8,10 @@ import javax.naming.ldap.Control;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        //Setting scanner
-        Scanner input = new Scanner(System.in);
-        //input data
-        String rocket1 = "32WESSDS";
-        int props1 = 3;
-        String rocket2 = "LDSFJA32";
-        int props2 = 6;
-        //connecting with control
         Controlador controlador = new Controlador();
-        //passing the data for instanciation
-        controlador.createRocket(rocket1, props1);
-        controlador.createRocket(rocket2, props2);
-        //Print
-        System.out.println(rocket1 + " " + controlador.getPropellers(rocket1) + "\n"
-                + rocket2 + " " + controlador.getPropellers(rocket2));
-
+        controlador.createRocket("32WESSDS", 3);
+        controlador.createRocket("LDSFJA32", 6);
+        System.out.println("32WESSDS" + " " + controlador.getPropellers("32WESSDS") + "\n"
+                + "LDSFJA32" + " " + controlador.getPropellers("LDSFJA32"));
     }
-
 }
