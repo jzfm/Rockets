@@ -64,15 +64,3 @@ public class Controlador {
         rocket.brake(rounds);
     }
 }
-
-/*
-public List<Integer> getMaxPotency(String id) throws Exception {
-        Rocket rocket = getRocket(id);
-        List<Propeller> propellers = rocket.getPropellers();
-        List<Integer> maxPotency = new ArrayList<>();
-        for (Propeller propeller : propellers) {
-        maxPotency.add(propeller.getMaxPotency());
-        }
-        return maxPotency;
-        }
-        */
